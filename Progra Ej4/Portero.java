@@ -20,8 +20,10 @@ public class Portero extends Jugador {
     }
 
     public float EfecPor(){
-        //Esto solo para que me deje hacer mi commit.
-        int x= 2 ;
-        return x;
+
+        //Lo divido por partes, para que sea más fácil de entender la operación.
+        int x = (this.paradas - this.goles_rec);
+        int y = (this.paradas + this.goles_rec);
+        return ((x * 100 / y) + this.goles * 100 / this.lanzamientos);
     }
 }

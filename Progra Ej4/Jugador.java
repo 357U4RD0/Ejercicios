@@ -27,4 +27,8 @@ public class Jugador {
     public int getFaltas(){
         return this.faltas;
     }
+
+    public String getNombre(){
+        return this.nombre;
+    }
 }

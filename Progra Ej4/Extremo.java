@@ -18,9 +18,11 @@ public class Extremo extends Jugador {
     }
 
     public float EfecExt(){
-        //Esto solo para que me deje hacer mi commit.
-        int x= 2 ;
-        return x;
+
+        //Lo divido por partes, para que sea más fácil de entender la operación.
+        int x = (this.pases + this.asistencias - this.faltas);
+        int y = (this.pases + this.asistencias + this.faltas);
+        return ((x * 100 / y) + this.goles * 100 / this.lanzamientos);
     }
 
 }
