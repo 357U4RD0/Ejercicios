@@ -20,6 +20,7 @@ public class Jugador {
         this.lanzamientos = lanzamientos;
     }
 
+    //En mi análisis y diseño se me pasó el tener que utilizar getters.
     public int getGoles(){
         return this.goles;
     }

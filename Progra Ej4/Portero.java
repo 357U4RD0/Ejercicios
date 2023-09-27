@@ -11,6 +11,7 @@ public class Portero extends Jugador {
         this.goles_rec = goles_rec;
     }
 
+    //En mi análisis y diseño se me pasó el tener que utilizar getters.
     public int getPases(){
         return this.paradas;
     }
@@ -22,8 +23,8 @@ public class Portero extends Jugador {
     public float EfecPor(){
 
         //Lo divido por partes, para que sea más fácil de entender la operación.
-        int x = (this.paradas - this.goles_rec);
-        int y = (this.paradas + this.goles_rec);
+        float x = (this.paradas - this.goles_rec);
+        float y = (this.paradas + this.goles_rec);
         return ((x * 100 / y) + this.goles * 100 / this.lanzamientos);
     }
 }

@@ -9,6 +9,7 @@ public class Extremo extends Jugador {
         this.asistencias = asistencias;
     }
 
+    //En mi análisis y diseño se me pasó el tener que utilizar getters.
     public int getPases(){
         return this.pases;
     }
@@ -20,8 +21,8 @@ public class Extremo extends Jugador {
     public float EfecExt(){
 
         //Lo divido por partes, para que sea más fácil de entender la operación.
-        int x = (this.pases + this.asistencias - this.faltas);
-        int y = (this.pases + this.asistencias + this.faltas);
+        float x = (this.pases + this.asistencias - this.faltas);
+        float y = (this.pases + this.asistencias + this.faltas);
         return ((x * 100 / y) + this.goles * 100 / this.lanzamientos);
     }
 
