@@ -6,5 +6,4 @@ public class Libro extends Articulo {
         super(ID, Titulo, Autor, Materia, Ejemplares, Reserva);
         this.Editorial = Editorial;
     }
-
 }

@@ -4,6 +4,8 @@ public class Articulo {
     //pero Artículo al tener todos los datos que usaría Libro y revista
     //decidí hacer que este sea el padre.
 
+    //Aquí debería de haber incluido al "árbitro", 
+    //pero aparte que no sé a lo que se refiere, Erick dijo que no lo pongamos.
     protected int ID;
     protected String Titulo;
     protected String Autor;
@@ -20,4 +22,19 @@ public class Articulo {
         this.Reserva = Reserva;
     }
 
+    public String getTitulo(){
+        return this.Titulo;
+    }
+
+    public String getAutor(){
+        return this.Autor;
+    }
+
+    public String getMateria(){
+        return this.Materia;
+    }
+
+    public int getID(){
+        return this.ID;
+    }
 }
