@@ -61,16 +61,16 @@ public class Voleibol{
                     //Sortea a los jugadores según la efectividad del líbero.
                     Jugadores.sort(Jugadores.EfecLib());
                     for(int i = 0; i<4; i++){
-                        System.out.println("\nLos 3 mejores jugadores son:");
+                        System.out.println("\nLos 3 mejores líberos son:");
                         System.out.println(i + ". " + Jugadores.get(i).getNombres() + ": " + Jugadores.get(i).EfecLib());
                     }
                     break;
 
                 //Mostrar los pasadores que tengan más de 80% de efectividad
                 case("2"):
-                    System.out.println("Los siguiente extremos poseen más de 85 de efectividad");
+                    System.out.println("Los siguiente pasadores poseen más de 80 de efectividad\n");
                     for (Jugador Pas: Jugadores){
-                        if(Pas.EfecPas() > 85){
+                        if(Pas.EfecPas() > 80){
                             System.out.println(Pas.getNombres() + ": " + Pas.EfecPas());
                         }
                     }
