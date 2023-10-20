@@ -16,7 +16,7 @@ public class Jugador {
         this.Servicios = Servicios;
     }
 
-    //Getters que usaré
+    //Getters que probablemente usaré
     public String getNombres(){
         return this.Nombre;
     }
