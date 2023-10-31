@@ -21,8 +21,9 @@ public class Computadora implements Dispositivos {
         return this.encendido;
     }
 
-    public void MostrarInfo() {
-        System.out.println("Tipo: Computadora");
-        System.out.println("Marca: " + marca);
+    public String MostrarInfo() {
+        String x = ("Tipo: Teléfono");
+        String y = ("Marca: " + marca);
+        return x + y;
     }
 }

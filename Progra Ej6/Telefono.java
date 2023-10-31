@@ -19,8 +19,9 @@ class Telefono implements Dispositivos {
         return this.encendido;
     }
 
-    public void MostrarInfo() {
-        System.out.println("Tipo: Teléfono");
-        System.out.println("Marca: " + modelo);
+    public String MostrarInfo() {
+        String x = ("Tipo: Teléfono");
+        String y = ("Marca: " + modelo);
+        return x + y;
     }
 }

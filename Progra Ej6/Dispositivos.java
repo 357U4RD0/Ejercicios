@@ -4,5 +4,5 @@ interface Dispositivos {
     void encender();
     void apagar();
     boolean estaEncendido();
-    void MostrarInfo();
+    String MostrarInfo();
 }
